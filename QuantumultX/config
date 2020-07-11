@@ -1,4 +1,4 @@
-; 20200617_190430
+; 20200711
 
 # 以 ";" 或 "#" 或 "//" 开头的行为注释行。
 
@@ -44,6 +44,12 @@ server=/*.xiaomi.com/119.29.29.29
 
 [policy]
 #策略
+#######🐝#######
+# Static静态策略指向手动选择候选服务器。
+# Available可用性策略指向候选服务器中的第一个可用服务器（并发URL延迟测试将在触发该策略且策略结果不可用时立即启动）。
+# Round-robin轮询策略指向下一个连接候选中的下一个服务器。
+# SSID策略根据网络环境指向预设服务器。
+#
 
 ;static=🐟 漏网之鱼, direct, proxy, 健康检测, 🐳 SSID策略, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Final.png
 
@@ -123,7 +129,7 @@ https://raw.githubusercontent.com/limbopro/Profiles/master/Quantumult/X/Filter/B
 
 
 [rewrite_remote]
-https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Rewrite_lhie1.conf, update-interval=86400, opt-parser=false, tag=lhie1, enabled=true
+https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Rewrite_lhie1.conf, update-interval=86400, opt-parser=false, tag=lhie1复写, enabled=true
 #远程重写
 https://raw.githubusercontent.com/eHpo1/Rules/master/QuantumultX/Rewrite.txt, tag=eHpo1去广告, enabled=true
 
@@ -137,8 +143,10 @@ https://github.com/DivineEngine/Profiles/raw/master/Quantumult/Rewrite/Unlock/Ti
 
 
 [server_local]
-#本地节点
-http=106.52.127.72:19951, fast-open=false, udp-relay=false, tag=🎧 解锁网易云音乐
+#网易云音乐
+http=106.52.127.72:19951, fast-open=false, udp-relay=false, tag=🎧 解锁网易云音乐1
+shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com, fast-open=false, udp-relay=false, tag=🎧 解锁网易云音乐2
+http=111.67.197.245:10086, over-tls=false, fast-open=false, udp-relay=false, tag=🎧 解锁网易云音乐3
 
 [task_local]
 
@@ -151,7 +159,15 @@ http=106.52.127.72:19951, fast-open=false, udp-relay=false, tag=🎧 解锁网�
 
 # 京东
 #浏览器登录 https://bean.m.jd.com 点击签到并且出现签到日历
-1 0 * * * nzw9314/NobyDa/JD-DailyBonus/JD_DailyBonus.js, tag=京豆
+1,2,3 0 * * * nzw9314/NobyDa/JD-DailyBonus/JD_DailyBonus.js, tag=京豆
+# 贴吧
+1,2,3 0 * * * nzw9314/NobyDa/QuantumultX/TieBa-DailyBonus/TieBa_DailyBonus_QX.js
+# 招行信用卡(公众号) (By @iNotification)
+5 0 * * * nzw9314/Script/cmbchina.js
+# 京东到家 (By @barrymchen)
+5 0 * * * nzw9314/Script/jddj.js
+# 活动抽奖 (By @makexp)
+5 0 * * * nzw9314/Script/hdcj.js
 
 [rewrite_local]
 #本地脚本
@@ -181,6 +197,34 @@ host-suffix, ehg-youtube.hitbox.com, reject
 
 #网易云音乐
 host-suffix, music.126.net, direct
+
+#讯飞语记-广告拦截
+host-suffix, voiceads.cn, 🚫 广告拦截
+host-suffix, ads.voiceads.cn, 🚫 广告拦截
+host-suffix, bj.imp.voiceads.cn, 🚫 广告拦截
+host-suffix, ai.voiceads.cn, 🚫 广告拦截
+
+#🦑 蘋果の新聞-广告拦截
+host-suffix, appledaily.com.hk, 🦑 蘋果の新聞
+host-suffix, nxtdig.com.hk, 🦑 蘋果の新聞
+host-suffix, nextmedia.com, 🦑 蘋果の新聞
+host-suffix, omoplanet.com, 🦑 蘋果の新聞
+host-suffix, nxtdig.com, 🦑 蘋果の新聞
+host-suffix, crwdcntrl.net, 🦑 蘋果の新聞
+host-suffix, polldaddy.com, 🦑 蘋果の新聞
+host-suffix, nexage.com, 🦑 蘋果の新聞
+host-suffix, appledaily.com.tw, 🦑 蘋果の新聞
+host-suffix, twnextdigital.com, 🦑 蘋果の新聞
+host-suffix, nxtdig.com.tw, 🦑 蘋果の新聞
+host-suffix, branch.io, 🦑 蘋果の新聞
+
+#TIKTOK-去水印广告拦截
+host-suffix, musical.ly, proxy
+host-suffix, tiktokv.com,proxy
+host-suffix, tiktokcdn.com,proxy
+host-suffix, -tiktokcdn-com,proxy
+host-suffix, muscdn.com, proxy
+user-agent, TikTok*, proxy
 
 ip-cidr, 10.0.0.0/8, direct
 ip-cidr, 127.0.0.0/8, direct
