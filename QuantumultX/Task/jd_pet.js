@@ -93,7 +93,8 @@ const JD_API_HOST = 'https://api.m.jd.com/client.action';
 const cookie = $hammer.read('CookieJD');
 
 var shareCodes = [ // 这个列表填入你要助力的好友的shareCode, 最多可能是5个? 没有验证过
-    'MTAxODc2NTE0NzAwMDAwMDAyODczNjE3NQ==' //Tommy
+    'MTAxODc2NTE0NzAwMDAwMDAyODczNjE3NQ==', //Tommy
+    '5ee1791d7bac4d6dab09b9dc0df7d2af' //pary
 
 ]
 // 添加box功能
