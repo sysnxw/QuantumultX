@@ -94,8 +94,8 @@ const cookie = $hammer.read('CookieJD');
 
 var shareCodes = [ // 这个列表填入你要助力的好友的shareCode, 最多可能是5个? 没有验证过
     'MTAxODc2NTE0NzAwMDAwMDAyODczNjE3NQ==', //Tommy
-    'MTAxODcxOTI2NTAwMDAwMDAxOTkyNDYzMw==' //pary
-
+    'MTAxODcxOTI2NTAwMDAwMDAxOTkyNDYzMw==', //pary
+    'MTAxODcxOTI2NTAwMDAwMDAyODg4MjIxNQ==', //银河
 ]
 // 添加box功能
 // 【用box订阅的好处】
