@@ -105,6 +105,7 @@ const JD_API_HOST = 'https://api.m.jd.com/client.action';
 
 var plantUuids = [ // 这个列表填入你要助力的好友的plantUuid
     '5v54muefvggyqdnxlwhko2keb4', //tommy
+    'c4fvnads7lnqstzxzg24vausccdv7eqckiou5vy' //pray
 ]
 let currentRoundId = null;//本期活动id
 let lastRoundId = null;//上期id
