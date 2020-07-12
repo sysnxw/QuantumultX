@@ -102,7 +102,7 @@ const name = '京东水果'
 var shareCodes = [ // 这个列表填入你要助力的好友的shareCode
     '24d52716a1d043b3b3e30808de3c9abe', //G S
     '039b62a2726644e8830734088a12f6ca', //肯打:chicken:
-    'a9360baeceb04c9baaaa109f5d428d3c',
+    'c4a9fc8a1e6645bf9527d39d39ae870a', //tommy
     '61ff5c624949454aa88561f2cd721bf6',
     '40dbf12bb7ea4b8eb772741afe2125da'
 ]
