@@ -12,8 +12,16 @@ const url = "https://testflight.apple.com/join/";
  * 填入要监测的appkey。从testfligt地址获取。
  * 例如"VCIvwk2g,wArXdacJ,2vnRvOTX,LzjySbQx,IdFRwmNy,qDkBu2ur,4Qt2lIm5,ZzqOu8tX,ftCqFe6D,fy7LvHVA,QKqitFwc"
 */
+//网易邮箱大师 Pro//2NH4aiKd
+//Working Copy - Git client//ZzqOu8tX
+//Quantumult X
+//LastPass Password Manager
+//Kitsunebi - Proxy Utility
+//Anubis - API Debug &amp; Inspect
+//Spotify: Music and Podcasts
+//
+//
 const appkey = "2NH4aiKd,VCIvwk2g,wArXdacJ,2vnRvOTX,LzjySbQx,IdFRwmNy,qDkBu2ur,4Qt2lIm5,ZzqOu8tX,ftCqFe6D,fy7LvHVA,QKqitFwc,1SyedSId";
-//网易邮箱大师 Pro--2NH4aiKd
 //const appkey=getdata('appkey');
 
 //是否在没有tf位置的时候仍然弹出通知，默认不弹出,防止过多无用通知。
