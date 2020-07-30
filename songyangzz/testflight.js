@@ -12,8 +12,9 @@ const url = "https://testflight.apple.com/join/";
  * 填入要监测的appkey。从testfligt地址获取。
  * 例如"VCIvwk2g,wArXdacJ,2vnRvOTX,LzjySbQx,IdFRwmNy,qDkBu2ur,4Qt2lIm5,ZzqOu8tX,ftCqFe6D,fy7LvHVA,QKqitFwc"
 */
-//const appkey = "VCIvwk2g,1SyedSId";
-const appkey=getdata('appkey');
+//const appkey = "VCIvwk2g,1SyedSId,";
+//网易邮箱大师 Pro--2NH4aiKd
+const appkey=getdata('2NH4aiKd,VCIvwk2g,wArXdacJ,2vnRvOTX,LzjySbQx,IdFRwmNy,qDkBu2ur,4Qt2lIm5,ZzqOu8tX,ftCqFe6D,fy7LvHVA,QKqitFwc,1SyedSId');
 
 //是否在没有tf位置的时候仍然弹出通知，默认不弹出,防止过多无用通知。
 var isNOtify = getdata('testflight_isnotify');
